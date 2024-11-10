@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Academic Hub</title>
+    <link rel="stylesheet" href="css/log.css">
+</head>
+<body>
+
+    <div class="login-container">
+        <div class="login-box">
+            <h1>Login to Academic Hub</h1>
+            <form action="#"id="myform">
+                <div class="input-group">
+                        <div id="errorMessage" class="error-message">Invalid Input</div>
+                    <label for="name">Username:</label>
+                    <input type="text" id="name" placeholder="Enter your username" required>
+                </div>
+
+                <div class="input-group">
+                    <label for="password">Password:</label>
+                    <input type="password" id="password" placeholder="Enter your password" required>
+                </div>
+
+                <div class="input-group">
+                    <label for="role">Login as:</label>
+                    <select id="role" required>
+                        <option value="admin">Admin</option>
+                        <option value="staff">Staff</option>
+                        <option value="student">Student</option>
+                    </select>
+                </div>
+
+                <button onclick="check()" type="button">Login</button>
+                <p>Don't have an account? <a href="signup.html">Sign up here</a></p>
+            </form>
+        </div>
+    </div>
+    <script src="js/log.js"></script>
+    
+
+
+</body>
+</html>
