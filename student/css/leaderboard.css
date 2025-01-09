@@ -1,0 +1,82 @@
+/* Leaderboard Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9fafb;
+    color: #1f2937;
+}
+
+#leaderboard {
+    padding: 20px;
+    max-width: 100%;
+    margin: 0 auto;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+#leaderboard h1 {
+    color: #f7b731;
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+.leaderboard-container {
+    overflow-x: auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+    text-align: center;
+}
+
+table th, table td {
+    border: 1px solid #ddd;
+    padding: 15px;
+    font-size: 1.1em;
+}
+
+table th {
+    background-color: #1f2937;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+table tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+table tr:hover {
+    background-color: #e8e8e8;
+}
+
+table img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 2px solid #f7b731;
+}
+
+.rank {
+    font-weight: bold;
+    color: #555;
+}
+
+.rank.first {
+    color: #ffd700;
+    font-size: 1.3em;
+}
+
+.rank.second {
+    color: #c0c0c0;
+    font-size: 1.2em;
+}
+
+.rank.third {
+    color: #cd7f32;
+    font-size: 1.1em;
+}

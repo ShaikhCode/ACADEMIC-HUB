@@ -1,0 +1,48 @@
+/* Marks Page Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9fafb;
+    color: #1f2937;
+}
+
+#marks {
+    padding: 20px;
+    max-width: 800px;
+    margin: 0 ;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+#marks h2 {
+    text-align: center;
+    color: #f7b731;
+    margin-bottom: 20px;
+}
+
+.marks-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: center;
+}
+
+.subject-card {
+    background-color: #f7b731;
+    color: #fff;
+    border-radius: 5px;
+    padding: 15px;
+    text-align: center;
+    width: 200px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.subject-card h3 {
+    margin-bottom: 10px;
+    color: #1f2937;
+    background-color: #fff;
+    padding: 5px;
+    border-radius: 5px;
+}
