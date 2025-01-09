@@ -1,0 +1,299 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f9fafb; /* Soft White */
+    color: #555; /* Light Gray */
+    line-height: 1.6;
+}
+
+/* Header */
+.header {
+    background-color: #1f2937; /* Charcoal Black */
+    color: #f9fafb; /* Soft White */
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header .logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #f7b731; /* Golden Yellow */
+}
+
+.header .navbar a {
+    color: #f9fafb; /* Soft White */
+    text-decoration: none;
+    margin-left: 15px;
+    font-size: 16px;
+}
+
+.header .navbar a:hover {
+    color: #f7b731; /* Golden Yellow */
+    text-decoration: underline;
+}
+
+/*Hamburger Menu */
+.hamburger {
+    display: none;
+    flex-direction: column;
+    gap: 5px;
+    cursor: pointer;
+}
+
+.hamburger span {
+    display: block;
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    transition: transform 0.3s ease;
+}
+
+/* Container */
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+
+/* Sidebar */
+.sidebar {
+    flex: 1;
+    max-width: 250px;
+    background-color: #1f2937; /* Charcoal Black */
+    color: #f9fafb; /* Soft White */
+    padding: 15px;
+}
+
+.sidebar ul {
+    list-style: none;
+}
+
+.sidebar ul li {
+    margin: 15px 0;
+}
+
+.sidebar ul li a {
+    color: #f9fafb; /* Soft White */
+    text-decoration: none;
+}
+
+.sidebar ul li a:hover {
+    color: #f7b731; /* Golden Yellow */
+}
+
+/* Main Content */
+
+.main-content {
+    flex: 3;
+    padding: 20px;
+    width: 100%;
+}
+
+.main-content h1 {
+    margin-bottom: 20px;
+    color: #1f2937; /* Charcoal Black */
+}
+
+.metrics {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.card {
+    background: #fff; /* Neutral White */
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    text-align: center;
+    align-item: center;
+    justify-contain: center;
+    flex: 1;
+    min-width: 150px;
+}
+
+.card h3 {
+    margin-bottom: 10px;
+    color: #f7b731; /* Golden Yellow */
+}
+
+.card p {
+    font-size: 20px;
+    font-weight: bold;
+    color: #1f2937; /* Charcoal Black */
+}
+
+/* Progress Bar Styles */
+.progress-container {
+    position: relative;
+    width: 150px;
+    height: 150px;
+}
+
+.progress-circle {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.circle {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    position: relative;
+    background-color: #ddd;
+    overflow: hidden;
+}
+
+.mask {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    clip: rect(0, 150px, 150px, 75px);
+    background-color: #4caf50;
+    transform: rotate(0deg);
+    transition: transform 0.5s ease-in-out;
+}
+
+.mask.full {
+    clip: rect(0, 75px, 150px, 0);
+}
+
+.inside-circle {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    background: #fff;
+    transform: translate(-50%, -50%);
+    z-index: 10;
+}
+
+#percentage {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 24px;
+    font-weight: bold;
+    color: #4caf50;
+    z-index: 20;
+}
+
+
+#progress {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 24px;
+    font-weight: bold;
+    color: #4caf50;
+    z-index: 20;
+}
+
+/* Feedback Section */
+form label {
+    display: block;
+    margin-bottom: 10px;
+    color: #1f2937; /* Charcoal Black */
+}
+
+form textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+form button {
+    margin-top: 10px;
+    padding: 10px 15px;
+    background-color: #f7b731; /* Golden Yellow */
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #555; /* Light Gray */
+}
+
+/* Footer */
+.footer {
+    background-color: #1f2937; /* Charcoal Black */
+    color: #f9fafb; /* Soft White */
+    text-align: center;
+    padding: 10px 0;
+    margin-top: 20px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
+
+    .sidebar {
+        max-width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .metrics {
+        flex-direction: column;
+        gap: 10px;
+    }
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .sidebar{
+        display:none;
+    }
+    header .navbar {
+        display: none; /* Hide navbar links */
+        flex-direction: column;
+        gap: 10px;
+        position: absolute;
+        top: 70px;
+        right: 20px;
+        width: 80%;
+        background-color: #1c1c1c;
+        padding: 20px;
+        border-radius: 8px;
+        z-index: 99999;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    }
+
+    header .navbar.active {
+        display: flex; /* Show navbar links on toggle */
+    }
+
+    .hamburger {
+        display: flex; /* Show hamburger menu icon */
+    }
+
+    .hamburger.active span:nth-child(1) {
+        transform: rotate(45deg) translate(5px, 5px);
+    }
+
+    .hamburger.active span:nth-child(2) {
+        opacity: 0; /* Hide middle bar */
+    }
+
+    .hamburger.active span:nth-child(3) {
+        transform: rotate(-45deg) translate(5px, -5px);
+    }
+}

@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Dashboard - Academic Hub</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="logo">Academic Hub</div>
+        <nav class="navbar">
+            <a href="#dashboard">Dashboard</a>
+            <a href="#attendance">Attendance</a>
+            <a href="#marks">Marks</a>
+            <a href="#feedback">Feedback</a>
+            <a href="profile.html">Profile</a>
+        </nav>
+        <div class="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <div class="container">
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <ul>
+                <li><a href="#dashboard">Dashboard</a></li>
+                <li><a href="#attendance">Attendance</a></li>
+                <li><a href="#marks">Marks</a></li>
+                <li><a href="#feedback">Feedback</a></li>
+                <li><a href="#notifications">Notifications</a></li>
+            </ul>
+        </aside>
+
+        <!-- Main Dashboard -->
+        <main class="main-content">
+            <section id="dashboard">
+                <h1>Welcome, <span id="pname">Alex</span>!</h1>
+                <div class="metrics">
+                    <div class="card">
+  
+            <h3>Attendance</h3>
+     <div class="progress-container">
+    <div class="progress-circle">
+      <span id="percentage">0%</span>
+      <div class="circle">
+        <div class="mask full" id="mask-full"></div>
+        <div class="mask half" id="mask-half"></div>
+        <div class="inside-circle"></div>
+      </div>
+    </div>
+  </div>
+                                         
+                    </div>
+
+                    <div class="card">           
+                        <h3>Grades</h3>           
+                        <p>A+</p>
+                    </div>
+
+                    <div class="card">
+                    <h3>Progress</h3>
+    <div class="progress-container">
+    <div class="progress-circle">
+      <span id="progress">0%</span>
+      <div class="circle">
+        <div class="mask full" id="mask-full"></div>
+        <div class="mask half" id="mask-half"></div>
+        <div class="inside-circle"></div>
+      </div>
+    </div>
+  </div>
+                        
+       
+                    </div>
+                </div>
+            </section>
+
+            <section id="attendance">
+                <h2>Attendance</h2>
+                <p>Attendance details will go here...</p>
+            </section>
+
+            <section id="marks">
+                <h2>Marks</h2>
+                <p>Marks details will go here...</p>
+            </section>
+
+            <section id="feedback">
+                <h2>Feedback</h2>
+                <form>
+                    <label for="feedback-text">Your Feedback:</label>
+                    <textarea id="feedback-text" rows="5" placeholder="Enter your feedback here..."></textarea>
+                    <button type="submit">Submit</button>
+                </form>
+            </section>
+        </main>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>&copy; 2025 Academic Hub. All rights reserved.</p>
+    </footer>
+   <script src="script.js"></script>
+</body>
+</html>
