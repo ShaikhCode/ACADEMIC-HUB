@@ -36,9 +36,10 @@
                 <li><a href="#attendance">Attendance</a></li>
                 <li><a href="#marks">Marks</a></li>
                 <li><a href="#feedback">Feedback</a></li>
-                <li><a href="#notifications">Notifications</a></li>
+                <li><a href="#notifications">Leaderboard</a></li>
             </ul>
         </aside>
+
 
         <!-- Student Profile Section -->
         <section id="student-profile">
@@ -78,18 +79,12 @@
         </section>
     </div>
 
+    <!-- Footer -->
+    <footer class="footer">
+        <p>&copy; 2025 Academic Hub. All rights reserved.</p>
+    </footer>
+
     <script src="script.js"></script>
-    <script>
-      document.getElementById('image-upload').addEventListener('change', function(e) {
-    const file = e.target.files[0];
-    const reader = new FileReader();
 
-    reader.onload = function(e) {
-        document.getElementById('profile-img').src = e.target.result;
-    }
-
-    reader.readAsDataURL(file);
-});
-    <script>
 </body>
 </html>

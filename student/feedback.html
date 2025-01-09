@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Feedback</title>
+    <link rel="stylesheet" href="css/feedback.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Header -->
+    <header class="header">
+        <div class="logo">Academic Hub</div>
+        <nav class="navbar">
+            <a href="stud.html">Dashboard</a>
+            <a href="attendance.html">Attendance</a>
+            <a href="marks.html">Marks</a>
+            <a href="feedback.html">Feedback</a>
+            <a href="profile.html">Profile</a>
+        </nav>
+        <div class="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <div class="container">
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <ul>
+                <li><a href="stud.html">Dashboard</a></li>
+                <li><a href="attendance.html">Attendance</a></li>
+                <li><a href="marks.html">Marks</a></li>
+                <li><a href="feedback.html">Feedback</a></li>
+                <li><a href="Leaderboard.html">Leaderboard</a></li>
+            </ul>
+        </aside>
+
+    <section id="feedback">
+        <h1>Submit Your Feedback</h1>
+        <div class="feedback-container">
+            <form action="#">
+                <div class="form-group">
+                    <label for="student-name">Name:</label>
+                    <input type="text" id="student-name" name="student-name" placeholder="Enter your full name" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="student-id">Student ID:</label>
+                    <input type="text" id="student-id" name="student-id" placeholder="Enter your student ID" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="feedback-type">Feedback Type:</label>
+                    <select id="feedback-type" name="feedback-type" required>
+                        <option value="general">General</option>
+                        <option value="suggestion">Suggestion</option>
+                        <option value="complaint">Complaint</option>
+                    </select>
+                </div>
+                
+                <div class="form-group">
+                    <label for="feedback-message">Your Feedback:</label>
+                    <textarea id="feedback-message" name="feedback-message" placeholder="Write your feedback here..." rows="5" required></textarea>
+                </div>
+                
+                <button type="submit" class="submit-btn">Submit Feedback</button>
+            </form>
+        </div>
+    </section>
+    </div>
+    <!-- Footer -->
+    <footer class="footer">
+        <p>&copy; 2025 Academic Hub. All rights reserved.</p>
+    </footer>
+    
+    <script src="script.js"></script>
+</body>
+</html>
