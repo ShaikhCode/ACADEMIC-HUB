@@ -116,7 +116,9 @@ body {
     border: 1px solid #ddd;
     border-radius: 5px;
     text-align: center;
-    align-item: center;
+    diplay:flex;
+    flex-direction: column;
+    align-items: center;
     justify-contain: center;
     flex: 1;
     min-width: 150px;
