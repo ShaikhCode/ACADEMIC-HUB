@@ -13,6 +13,10 @@ body {
     line-height: 1.6;
 }
 
+h6{
+    font-size: xx-large;
+    color: rgb(255, 64, 64);
+}
 /* Header */
 .header {
     background-color: #1f2937; /* Charcoal Black */
@@ -116,12 +120,13 @@ body {
     border: 1px solid #ddd;
     border-radius: 5px;
     text-align: center;
-    diplay:flex;
-    flex-direction: column;
-    align-items: center;
-    justify-contain: center;
     flex: 1;
     min-width: 150px;
+}
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .card h3 {
@@ -206,21 +211,7 @@ body {
     z-index: 20;
 }
 
-/* Feedback Section */
-form label {
-    display: block;
-    margin-bottom: 10px;
-    color: #1f2937; /* Charcoal Black */
-}
-
-form textarea {
-    width: 100%;
-    padding: 10px;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-}
-
-form button {
+button {
     margin-top: 10px;
     padding: 10px 15px;
     background-color: #f7b731; /* Golden Yellow */
@@ -230,9 +221,10 @@ form button {
     cursor: pointer;
 }
 
-form button:hover {
+button:hover {
     background-color: #555; /* Light Gray */
 }
+
 
 /* Footer */
 .footer {
