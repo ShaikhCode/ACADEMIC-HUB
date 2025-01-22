@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Add Student Dashboard</title>
+    <link rel="stylesheet" href="css/addclass.css" />
+    <link rel="stylesheet" href="admin.css" />
+    <link rel="stylesheet" href="css/addstaff.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="logo">Academic Hub</div>
+      <nav class="navbar">
+        <a href="admin.html">Dashboard</a>
+        <a href="addstaff.html">Staff-Manage</a>
+        <a href="addstud.html">Student-Manage</a>
+        <a href="addclass.html">Class-Manage</a>
+        <a href="profile.html">Profile</a>
+      </nav>
+      <div class="hamburger" id="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </header>
+
+    <div class="container">
+      <!-- Sidebar -->
+      <aside class="sidebar">
+        <ul>
+          <li><a href="admin.html">Dashboard</a></li>
+          <li><a href="addstaff.html">Staff-Manage</a></li>
+          <li><a href="addstud.html">Student-Manage</a></li>
+          <li><a href="addclass.html">Class-Manage</a></li>
+          <li><a href="report.html">Report</a></li>
+          <li><a href="profile.html">Profile</a></li>
+        </ul>
+      </aside>
+
+      <!-- Main Content -->
+      <main class="main-content">
+        <h6>Add Staff And Manage Staff:</h6>
+        <div class="class-dashboard">
+          <h2>Class Management</h2>
+
+          <form
+            class="form-container"
+            id="add-class-form"
+            style="display: none"
+          >
+            <div class="form-group">
+              <label for="Branch">Branch:</label>
+              <input
+                type="text"
+                id="Branch"
+                name="Branch"
+                placeholder="Enter Branch/Name of Class"
+                required
+              />
+            </div>
+            <button type="submit" id="hide">Add Class</button>
+          </form>
+
+          <!-- Add Class Button -->
+          <button id="add-class-btn" class="btn-add-class">Add Class</button>
+
+          <!-- Class Cards -->
+          <div class="class-cards">
+            <!-- Each class card -->
+            <div class="class-card" onclick="viewClassDetails('Class 1')">
+              <h3>Class 1</h3>
+              <p>Total Students: 60</p>
+              <p>Branch : Computer FY</p>
+            </div>
+            <div class="class-card" onclick="viewClassDetails('Class 2')">
+              <h3>Class 2</h3>
+              <p>Total Students: 59</p>
+              <p>Branch : Computer TY</p>
+            </div>
+            <!-- More class cards can be dynamically added -->
+          </div>
+
+          <!-- Student Table (Hidden by Default) -->
+          <div class="student-table-container" id="student-table">
+            <h3 id="class-title">Students in Class 1</h3>
+            <table>
+              <thead>
+                <tr>
+                  <th>Roll Number</th>
+                  <th>Student Name</th>
+                  <th>Email</th>
+                  <th>Contact</th>
+                </tr>
+              </thead>
+              <tbody>
+                <!-- Student rows will be dynamically populated -->
+                <tr>
+                  <td>1</td>
+                  <td>John Doe</td>
+                  <td>john@example.com</td>
+                  <td>123-456-7890</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </main>
+    </div>
+
+    <footer class="footer">
+      <p>&copy; 2024 Academic Hub. All rights reserved.</p>
+    </footer>
+
+    <script>
+        //hide and unhide script
+      const formContainer = document.getElementById("add-class-form");
+      const hide = document.getElementById("hide");
+      const unhide = document.getElementById("add-class-btn");
+
+      unhide.addEventListener("click", () => {
+        if (
+          formContainer.style.display === "none" ||
+          formContainer.style.display === ""
+        ) {
+          formContainer.style.display = "block";
+          unhide.style.display = "none";
+        }
+      });
+      hide.addEventListener("click", () => {
+        if (formContainer.style.display === "block") {
+          formContainer.style.display = "none";
+          unhide.style.display = "block";
+        }
+      });
+
+      
+      function viewClassDetails(className) {
+        const classTitle = document.getElementById("class-title");
+        const studentTable = document.getElementById("student-table");
+        // Update the class title
+        classTitle.innerText = `Students in ${className}`;
+        // Display the table
+        studentTable.style.display = "block";
+      }
+
+      const hamburger = document.getElementById("hamburger");
+      const navbar = document.querySelector(".navbar");
+      hamburger.addEventListener("click", () => {
+        navbar.classList.toggle("active");
+        hamburger.classList.toggle("active");
+      });
+
+    </script>
+  </body>
+</html>

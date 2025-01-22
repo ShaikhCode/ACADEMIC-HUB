@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reports</title>
+    <link rel="stylesheet" href="css/report.css">
+    <link rel="stylesheet" href="admin.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="logo">Academic Hub</div>
+        <nav class="navbar">
+            <a href="admin.html">Dashboard</a>
+            <a href="addstaff.html">Staff-Manage</a>
+            <a href="addstud.html">Student-Manage</a>
+            <a href="addclass.html">Class-Manage</a>
+            <a href="profile.html">Profile</a>
+            
+        </nav>
+        <div class="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <div class="container">
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <ul>
+            <li><a href="admin.html">Dashboard</a></li>
+            <li><a href="addstaff.html">Staff-Manage</a></li>
+            <li><a href="addstud.html">Student-Manage</a></li>
+            <li><a href="addclass.html">Class-Organization</a></li>
+            <li><a href="reports.html">Reports</a></li>
+            <li><a href="#settings">Settings</a></li>
+            </ul>
+        </aside>
+
+
+    <!-- Marks Section -->
+    <section id="reports">
+        <h2>Student Marks</h2>
+        <div id="reports-container" class="reports-container">
+            <!-- Subject-wise Marks -->
+            
+            <div class="reports-card">
+                <h3>Raj </h3>
+                <p><strong>Type:</strong><span id="rt1"></span> </p>
+                <p><strong>Message:</strong> <span id="rm1"></span></p>
+            </div>    
+
+            <div class="reports-card">
+                <h3>Abhay </h3>
+                <p><strong>Type:</strong><span id="rt1"></span> </p>
+                <p><strong>Message:</strong> <span id="rm1"></span></p>
+            </div>    
+
+            <div class="reports-card">
+                <h3>Rehan</h3>
+                <p><strong>Type:</strong><span id="rt1"> </span> </p>
+                <p><strong>Message:</strong> <span id="rm1"></span></p>
+            </div>    
+
+            <div class="reports-card">
+                <h3>Yasin </h3>
+                <p><strong>Type:</strong><span id="rt1"></span> </p>
+                <p><strong>Message:</strong> <span id="rm1"></span></p>
+            </div>    
+
+            <div class="reports-card">
+                <h3>Yash</h3>
+                <p><strong>Type:</strong><span id="rt1"></span> </p>
+                <p><strong>Message:</strong> <span id="rm1"></span></p>
+            </div>    
+
+        </div>
+    </section>
+   </div>
+   
+   <!-- Footer -->
+    <footer class="footer">
+        <p>&copy; 2025 Academic Hub. All rights reserved.</p>
+    </footer> 
+
+   <script src="script.js"></script>
+   <script>
+    function il() { 
+        // Create the reports card element 
+    const reportsCard = document.createElement('div');
+     reportsCard.classList.add('reports-card');
+      // Add the content to the reports card 
+      console.log("run1"); 
+      reportsCard.innerHTML = 
+      ` <h3>Rehan</h3>
+       <p><strong>Type:</strong> <span id="rt1">Example Type</span></p>
+        <p><strong>Message:</strong> <span id="rm1">Example Message</span></p> `; 
+        // Append the reports card to the container 
+        const reportContainer = document.getElementById('report-container'); 
+        reportContainer.appendChild(reportsCard); } 
+        setInterval(il,1000);
+    
+   </script>
+</body>
+   
+</html>
