@@ -54,7 +54,7 @@ function check() {
         // Redirect based on the selected role
         let redirectPath = '';
         if (selectedRole === 'admin') {
-            redirectPath = './admin/dash.html';  // Redirect for admin
+            redirectPath = './admin/admin.html';  // Redirect for admin
         } else if (selectedRole === 'staff') {
             redirectPath = './staff/dash.html';  // Redirect for staff
         } else if (selectedRole === 'student') {
