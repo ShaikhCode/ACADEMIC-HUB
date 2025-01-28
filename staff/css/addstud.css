@@ -67,7 +67,3 @@ form button {
 form button:hover {
     background-color: #d39e22; /* Darker Yellow */
 }
-
-#staff-management , #stud-management{
-    overflow-x: auto;
-}

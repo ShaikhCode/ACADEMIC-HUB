@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Marks - Manage</title>
+  <link rel="stylesheet" href="css/mark.css">
+  <link rel="stylesheet" href="staff.css">
+</head>
+
+<body>
+
+  <!-- Header -->
+  <header class="header">
+    <div class="logo">Academic Hub</div>
+    <nav class="navbar">
+      <a href="staff.html">Dashboard</a>
+      <a href="atten.html">Attendance</a></li>
+      <a href="mark.html">Marks</a>
+      <a href="addstud.html">Student-Managent</a>
+      <a href="feedback.html">Feedback</a></li>
+      <a href="profile.html">profile</a>
+    </nav>
+    <div class="hamburger" id="hamburger">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+  </header>
+
+
+  <!-- Main Content -->
+  <div class="container">
+
+    <!-- Sidebar -->
+    <aside class="sidebar">
+      <ul>
+        <li><a href="staff.html">Dashboard</a></li>
+        <li><a href="atten.html">Attendance</a></li>
+        <li><a href="mark.html">Marks</a></li>
+        <li><a href="addstud.html">Student-Managent</a></li>
+        <li><a href="feedback.html">Feedback</a></li>
+        <li><a href="profile.html">profile</a></li>
+      </ul>
+    </aside>
+
+    <!-- Main Container -->
+    <div class="main-container">
+
+      <!-- Class Selection -->
+      <section id="class-selection">
+        <h6>Marks Management</h6>
+        <h2>Select the class to alter:</h2>
+
+        <div class="class-con">
+          <!-- Each class card -->
+          <div class="class-card" onclick="viewClassDetails('Class 1')">
+            <h3>Class 1</h3>
+            <p>Total Students: 60</p>
+            <p>Branch : Computer FY</p>
+          </div>
+          <div class="class-card" onclick="viewClassDetails('Class 2')">
+            <h3>Class 2</h3>
+            <p>Total Students: 59</p>
+            <p>Branch : Computer TY</p>
+          </div>
+          <!-- More class cards can be dynamically added -->
+        </div>
+
+        <div class="update-options">
+          <button id="sequential-update" class="btn">Sequential Update</button>
+          <button id="specific-update" class="btn">Specific Update</button>
+        </div>
+      </section>
+
+      <!-- Sequential Update Section -->
+      <section id="sequential-update-section" class="hidden">
+        <h2>Sequential Update</h2>
+        <table>
+          <thead>
+            <tr>
+              <th>Roll No</th>
+              <th>Name</th>
+              <th>Marks</th>
+              <th>Actions</th>
+            </tr>
+          </thead>
+          <tbody id="sequential-table">
+            <!-- Dynamic Rows Here -->
+          </tbody>
+        </table>
+        <button class="btn-save">Save Changes</button>
+      </section>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <p>&copy; 2025 Academic Hub. All rights reserved.</p>
+  </footer>
+
+  <script>
+    // Toggle Navbar for Mobile View
+    const hamburger = document.getElementById("hamburger");
+    const navbar = document.querySelector(".navbar");
+    hamburger.addEventListener("click", () => {
+      navbar.classList.toggle("active");
+      hamburger.classList.toggle("active");
+    });
+  </script>
+
+
+
+</body>
+
+</html>

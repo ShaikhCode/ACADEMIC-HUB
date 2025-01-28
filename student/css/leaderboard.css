@@ -10,17 +10,41 @@ body {
 #leaderboard {
     padding: 20px;
     max-width: 100%;
-    margin: 0 auto;
-    background-color: #fff;
+    margin-right: 0;
+    /* background-color: #fff; */
     border-radius: 10px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    /*box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);*/
     text-align: center;
+    animation: bounceIn 1s ease;
+}
+
+@keyframes bounceIn {
+    from {
+        transform: scale(0.5);
+        opacity: 0;
+    }
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
 }
 
 #leaderboard h1 {
     color: #f7b731;
     font-size: 2.5em;
     margin-bottom: 20px;
+    animation: slideIn 1s ease;
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateY(-100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
 }
 
 .leaderboard-container {

@@ -293,9 +293,6 @@ table {
     animation: bounceIn 1s ease;
     
 }
-#student-management, #class-organization, #staff-management{
-    overflow-x: auto;
-}
 
 @keyframes bounceIn {
     from {
@@ -413,15 +410,29 @@ button:hover {
         top: 58px;
         right: 0px;
         width: 100%;
-        background-color: #1c1c1c;
+        background-color: #1f2937;
         padding: 20px;
         border-radius: 8px;
         z-index: 99999;
         box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
-      
+        animation: underflow 1s ease ;
     }
+    
+
+    @keyframes underflow {
+        from {
+            height: 0;
+        }
+        to {
+            height: 100%;
+        }
+    }
+    
 
     .header .navbar.active {
         display: flex; /* Show navbar links on toggle */
     }
+}
+.nh{
+    margin-bottom: 240px ;
 }

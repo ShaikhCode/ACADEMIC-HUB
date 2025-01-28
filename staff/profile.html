@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Add Student Dashboard</title>
+    <link rel="stylesheet" href="css/profile.css" />
+    <link rel="stylesheet" href="staff.css" />
+
+  </head>
+  <body>
+
+        <!-- Header -->
+        <header class="header">
+          <div class="logo">Academic Hub</div>
+          <nav class="navbar">
+          <a href="staff.html">Dashboard</a>
+          <a href="atten.html">Attendance</a></li>
+          <a href="mark.html">Marks</a>
+          <a href="stud_manage.html">Student-Managent</a>
+          <a href="feedback.html">Feedback</a></li>
+          <a href="profile.html">profile</a>
+          </nav>
+          <div class="hamburger" id="hamburger">
+              <span></span>
+              <span></span>
+              <span></span>
+          </div>
+      </header>
+  
+  
+      <!-- Main Content -->
+      <div class="container">
+  
+      <!-- Sidebar -->
+      <aside class="sidebar">
+          <ul>
+              <li><a href="staff.html">Dashboard</a></li>
+              <li><a href="atten.html">Attendance</a></li>
+              <li><a href="mark.html">Marks</a></li>
+              <li><a href="stud_manage.html">Student-Managent</a></li>
+              <li><a href="feedback.html">Feedback</a></li>
+              <li><a href="profile.html">profile</a></li>
+          </ul>
+      </aside>
+      
+      <!-- Main Content -->
+      <main class="main-content">
+        <!-- <h6>Add Staff And Manage Staff:</h6> -->
+        
+        <section id="student-profile">
+            <h2>Your Profile</h2>
+            <div class="profile-container">
+                <!-- Profile Image -->
+                <div class="profile-image">
+                <img src="img/ps.png" alt="Student Image" id="profile-img">
+                <input type="file" id="image-upload" accept="image/*">
+                </div>
+
+                <!-- Personal Information -->
+                <div class="profile-info">
+                    <h3>Personal Information</h3>
+                    <p><strong>Name:</strong> Alex</p>
+                    <p><strong>Email:</strong> example@example.com</p>
+                    <p><strong>Phone:</strong> +91 7272822899</p>
+                    <p><strong>Address:</strong> 123 Elm Street, City, State</p>
+                </div>
+
+                <!-- Academic Information -->
+                <div class="academic-info">
+                    <h3>Academic Information</h3>
+                    <p><strong>Roll Number:</strong> 150468</p>
+                    <p><strong>Course:</strong> Computer Science</p>
+                    <p><strong>Year:</strong> 3rd Year</p>
+                    <p><strong>Section:</strong> A</p>
+                </div>
+
+                <!-- Settings Section -->
+                <div class="settings">
+                    <h3>Settings</h3>
+                    <button id="edit-profile">Edit Profile</button>
+                    <button id="change-password">Change Password</button>
+                </div>
+            </div>
+        </section>
+
+      </main>
+    </div>
+
+    <footer class="footer">
+      <p>&copy; 2024 Academic Hub. All rights reserved.</p>
+    </footer>
+
+   
+
+    <script>
+      // Toggle Navbar for Mobile View
+      const hamburger = document.getElementById("hamburger");
+      const navbar = document.querySelector(".navbar");
+      hamburger.addEventListener("click", () => {
+        navbar.classList.toggle("active");
+        hamburger.classList.toggle("active");
+      });
+    </script>
+  </body>
+</html>

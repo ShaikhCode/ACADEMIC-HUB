@@ -9,18 +9,19 @@ function check() {
     const admins = [
         { username: 'admin', password: '123' },
         { username: 'admin1', password: '123' },
-        { username: 'hi', password: '123' }
+        { username: 'a1', password: '123' }
     ];
 
     const staff = [
         { username: 'staff', password: '123' },
-        { username: 'hi', password: '123' },
+        { username: 'staff1', password: '123' },
         { username: 's1', password: '123' }
     ];
 
     const students = [
         { username: 'student', password: '123' },
-        { username: 'stud', password: '123' }
+        { username: 'stud', password: '123' },
+        { username: 's1', password: '123' }
     ];
 
     // Get selected role
@@ -56,7 +57,7 @@ function check() {
         if (selectedRole === 'admin') {
             redirectPath = './admin/admin.html';  // Redirect for admin
         } else if (selectedRole === 'staff') {
-            redirectPath = './staff/dash.html';  // Redirect for staff
+            redirectPath = './staff/staff.html';  // Redirect for staff
         } else if (selectedRole === 'student') {
             redirectPath = './student/stud.html';  // Redirect for student
         }

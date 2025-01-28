@@ -3,24 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Admin Dashboard - Academic Hub</title>
-    <link rel="stylesheet" href="admin.css">
+    <title>Staff Dashboard - Academic Hub</title>
+    <link rel="stylesheet" href="staff.css">
 </head>
 <body>
     <!-- Header -->
     <header class="header">
         <div class="logo">Academic Hub</div>
         <nav class="navbar">
-            <a href="admin.html">Dashboard</a>
-            <a href="addstaff.html">Staff-Manage</a>
-            <a href="addstud.html">Student-Manage</a>
-            <a href="addclass.html">Class-Manage</a>
-            
-            <a href="report.html">Report</a>
-            <a href="profile.html">Profile</a>
-            
+        <a href="staff.html">Dashboard</a>
+        <a href="atten.html">Attendance</a></li>
+        <a href="mark.html">Marks</a>
+        <a href="stud_manage.html">Student-Managent</a>
+        <a href="feedback.html">Feedback</a></li>
+        <a href="profile.html">profile</a>
         </nav>
-        <div class="hamburger">
+        <div class="hamburger" id="hamburger">
             <span></span>
             <span></span>
             <span></span>
@@ -34,12 +32,12 @@
     <!-- Sidebar -->
     <aside class="sidebar">
         <ul>
-            <li><a href="admin.html">Dashboard</a></li>
-            <li><a href="addstaff.html">Staff-Manage</a></li>
-            <li><a href="addstud.html">Student-Manage</a></li>
-            <li><a href="addclass.html">Class-Organization</a></li>
-            <li><a href="reports.html">Reports</a></li>
-            <li><a href="#settings">Settings</a></li>
+            <li><a href="staff.html">Dashboard</a></li>
+            <li><a href="atten.html">Attendance</a></li>
+            <li><a href="mark.html">Marks</a></li>
+            <li><a href="stud_manage.html">Student-Managent</a></li>
+            <li><a href="feedback.html">Feedback</a></li>
+            <li><a href="profile.html">profile</a></li>
         </ul>
     </aside>
 
@@ -52,7 +50,7 @@
             <button id="logoutbtn"><a href="#logout">Logout</a></button>
             <div class="metrics">
                 <div class="card">
-                    <h3>Total Staff</h3>
+                    <h3>Total Class</h3>
                     <p>15</p>
                 </div>
                 <div class="card">
@@ -60,7 +58,7 @@
                     <p>300</p>
                 </div>
                 <div class="card">
-                    <h3>Classes</h3>
+                    <h3>Pending Works</h3>
                     <p>10</p>
                 </div>
             </div>
@@ -68,25 +66,25 @@
 
         <!-- Staff Management Section -->
         <section id="staff-management">
-            <h2>Staff Management</h2>
-            <button onclick="window.location.href='addstaff.html';">Add New Staff</button>
+            <h2>Attendance Management:</h2>
+            <button onclick="window.location.href='atten.html';">Add Attendance</button>
             <table>
                 <thead>
                     <tr>
                         <th>Name</th>
-                        <th>Role</th>
-                        <th>Email</th>
+                        <th>class</th>
+                        <th>Attendance</th>
                         <th>Actions</th>
                     </tr>
                 </thead>
                 <tbody>
                     <tr>
-                        <td>John Doe</td>
-                        <td>Teacher</td>
-                        <td>john@example.com</td>
+                        <td>Sameer</td>
+                        <td>TY-COM</td>
+                        <td>90%</td>
+                        
                         <td>
                             <button>Edit</button>
-                            <button>Delete</button>
                         </td>
                     </tr>
                     <!-- More rows as needed -->
@@ -96,25 +94,24 @@
 
         <!-- Student Management Section -->
         <section id="student-management">
-            <h2>Student Management</h2>
-            <button onclick="window.location.href='addstaff.html';">Add New Student</button>
+            <h2>Marks Management:</h2>
+            <button onclick="window.location.href='mark.html';">Add Mark</button>
             <table>
                 <thead>
                     <tr>
                         <th>Name</th>
                         <th>Class</th>
-                        <th>Email</th>
+                        <th>Marks</th>
                         <th>Actions</th>
                     </tr>
                 </thead>
                 <tbody>
                     <tr>
-                        <td>Jane Smith</td>
-                        <td>10A</td>
-                        <td>jane@example.com</td>
+                        <td>Rehan</td>
+                        <td>SY-COM</td>
+                        <td>89%</td>
                         <td>
                             <button>Edit</button>
-                            <button>Delete</button>
                         </td>
                     </tr>
                     <!-- More rows as needed -->
@@ -123,26 +120,25 @@
         </section>
 
         <!-- Class Organization Section -->
-        <section id="class-organization">
-            <h2>Class Organization</h2>
-            <button onclick="window.location.href='addstaff.html';">Add New Class</button>
+        <section id="">
+            <h2>Class Management:</h2>
+            <button onclick="window.location.href='Report.html';">class manage</button>
             <table>
                 <thead>
                     <tr>
                         <th>Class</th>
-                        <th>Teacher</th>
-                        <th>Students</th>
+                        <th>Attendance</th>
+                        <th>marks</th>
                         <th>Actions</th>
                     </tr>
                 </thead>
                 <tbody>
                     <tr>
                         <td>10A</td>
-                        <td>John Doe</td>
-                        <td>30</td>
+                        <td>90%</td>
+                        <td>30%</td>
                         <td>
                             <button>Edit</button>
-                            <button>Delete</button>
                         </td>
                     </tr>
                     <!-- More rows as needed -->
@@ -172,11 +168,16 @@
         // Toggle hamburger menu
         const hamburger = document.querySelector('.hamburger');
         const navbar = document.querySelector('.navbar');
+        // const header= document.querySelector('header');
 
         hamburger.addEventListener('click', () => {
             hamburger.classList.toggle('active');
             navbar.classList.toggle('active');
+        //     header.classList.add('nh');
         });
+        // if(header.classList==='nh'){
+        //     header.classList.remove('nh');
+        // }
     </script>
 </body>
 </html>

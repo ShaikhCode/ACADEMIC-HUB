@@ -3,44 +3,50 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Add Staff Dashboard</title>
-    <link rel="stylesheet" href="css/addstaff.css" />
-    <link rel="stylesheet" href="admin.css" />
+    <title>Add Student Dashboard</title>
+    <link rel="stylesheet" href="css/addstud.css" />
+    <link rel="stylesheet" href="staff.css" />
   </head>
   <body>
-    <header class="header">
-      <div class="logo">Academic Hub</div>
-      <nav class="navbar">
-        <a href="admin.html">Dashboard</a>
-        <a href="addstaff.html">Staff-Manage</a>
-        <a href="addstud.html">Student-Manage</a>
-        <a href="addclass.html">Class-Manage</a>
-        <a href="profile.html">Profile</a>
-      </nav>
-      <div class="hamburger" id="hamburger">
-        <span></span>
-        <span></span>
-        <span></span>
-      </div>
-    </header>
-
-    <div class="container">
+        <!-- Header -->
+        <header class="header">
+          <div class="logo">Academic Hub</div>
+          <nav class="navbar">
+          <a href="staff.html">Dashboard</a>
+          <a href="atten.html">Attendance</a></li>
+          <a href="mark.html">Marks</a>
+          <a href="stud_manage.html">Student-Managent</a>
+          <a href="feedback.html">Feedback</a></li>
+          <a href="profile.html">profile</a>
+          </nav>
+          <div class="hamburger" id="hamburger">
+              <span></span>
+              <span></span>
+              <span></span>
+          </div>
+      </header>
+  
+  
+      <!-- Main Content -->
+      <div class="container">
+  
       <!-- Sidebar -->
       <aside class="sidebar">
-        <ul>
-          <li><a href="admin.html">Dashboard</a></li>
-          <li><a href="addstaff.html">Staff-Manage</a></li>
-          <li><a href="addstud.html">Student-Manage</a></li>
-          <li><a href="addclass.html">Class-Manage</a></li>
-          <li><a href="report.html">Report</a></li>
-          <li><a href="profile.html">Profile</a></li>
-        </ul>
+          <ul>
+              <li><a href="staff.html">Dashboard</a></li>
+              <li><a href="atten.html">Attendance</a></li>
+              <li><a href="mark.html">Marks</a></li>
+              <li><a href="stud_manage.html">Student-Managent</a></li>
+              <li><a href="feedback.html">Feedback</a></li>
+              <li><a href="profile.html">profile</a></li>
+          </ul>
       </aside>
-
+      
       <!-- Main Content -->
       <main class="main-content">
-        <h6>Add Staff And Manage Staff:</h6>
-        <form class="form-container" id="add-staff-form" style="display: none;">
+        <h6>Add Student And Manage Student:</h6>
+
+        <form class="form-container" id="add-student-form" style="display: none;">
           <div class="form-group">
             <label for="name">Name:</label>
             <input
@@ -90,18 +96,17 @@
               required
             />
           </div>
-          <button type="submit" id="hide">Add Staff</button>
-          <button id="toggleButton">Add New Staff</button>
+          <button type="submit" id="hide">Add Student</button>
         </form>
 
         <!-- Staff Management Section -->
         <section id="staff-management">
-          
+          <button id="toggleButton">Add New Staff</button>
           <table>
               <thead>
                   <tr>
                       <th>Name</th>
-                      <th>Role</th>
+                      <th>Rank</th>
                       <th>Email</th>
                       <th>Actions</th>
                   </tr>
@@ -109,7 +114,7 @@
               <tbody>
                   <tr>
                       <td>Abhay</td>
-                      <td>Teacher</td>
+                      <td>1st</td>
                       <td>john@example.com</td>
                       <td>
                           <button>Edit</button>
@@ -119,7 +124,7 @@
 
 <tr>
                       <td>Yash</td>
-                      <td>Teacher</td>
+                      <td>2nd</td>
                       <td>john@example.com</td>
                       <td>
                           <button>Edit</button>
@@ -128,7 +133,7 @@
 </tr>
 <tr>
                       <td>Rehan</td>
-                      <td>Teacher</td>
+                      <td>3rd</td>
                       <td>john@example.com</td>
                       <td>
                           <button>Edit</button>
@@ -149,7 +154,7 @@
     <script>
     // Hide and unhide form script
     const toggleButton = document.getElementById('toggleButton');
-    const formContainer = document.getElementById('add-staff-form');
+    const formContainer = document.getElementById('add-student-form');
     const hide = document.getElementById('hide');
 
     toggleButton.addEventListener('click', () => {
