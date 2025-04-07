@@ -1,0 +1,63 @@
+/* Marks Page Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9fafb;
+    color: #1f2937;
+}
+
+#reports{
+    padding: 20px;
+    max-width: 990px;
+    margin-right: 0 ;  
+    border-radius: 5px;
+}
+
+#reports h2 {
+    text-align: center;
+    color: #f7b731;
+    margin-bottom: 20px;
+}
+
+.reports-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 25px;
+    justify-content: center;
+}
+
+.reports-card {
+    background-color: #f7b731;
+    color: #fff;
+    border-radius: 5px;
+    padding: 15px;
+    text-align: center;
+    width: 200px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    animation: bounceIn 1s ease;
+}
+
+@keyframes bounceIn {
+    from {
+        transform: scale(0.5);
+        opacity: 0;
+    }
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+.reports-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.reports-card h3 {
+    margin-bottom: 10px;
+    color: #1f2937;
+    background-color: #fff;
+    padding: 5px;
+    border-radius: 5px;
+}
