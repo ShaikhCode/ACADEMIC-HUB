@@ -1,0 +1,153 @@
+/* Form container styles */
+.form-container {
+    display: block; /* Show the form when needed */
+    width: 100%;
+    max-width: 500px; /* Limit the width for better readability */
+    margin: 0 auto;
+    background-color: #ffffff;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    transition: all 0.3s ease;
+}
+
+/* Form group styling */
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    font-size: 1rem;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 8px;
+    display: block;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 10px;
+    font-size: 1rem;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    outline: none;
+    transition: border-color 0.3s ease;
+}
+
+.form-group input:focus {
+    border-color: #f7b731; /* Highlight the input border on focus */
+    box-shadow: 0 0 5px rgba(247, 183, 49, 0.5); /* Add a soft glow */
+}
+
+/* Button styling */
+button {
+   
+    padding: 12px;
+    font-size: 1.2rem;
+    background-color: #f7b731;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+    background-color: #f39c12; /* Darker shade on hover */
+    transform: translateY(-3px); /* Slight lift effect */
+}
+
+button:active {
+    transform: translateY(1px); /* Subtle down effect when clicking */
+}
+
+/* Show form when display is set to 'block' */
+.form-container.show {
+    display: block;
+}
+
+/* Media queries for responsiveness */
+@media (max-width: 768px) {
+    .form-container {
+        width: 80%;
+    }
+}
+
+@media (max-width: 480px) {
+    .form-container {
+        width: 95%;
+    }
+}
+
+
+/*    CARD AND SETCION OF SUBJECTS*/
+
+
+#subject-management {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    
+    padding: 10px;
+}
+
+.subject-card {
+    padding: 20px;
+    background: linear-gradient(135deg, #f7b731, #f1c40f); /* Gradient background */
+    width: 30%;
+    color: white;
+    border-radius: 12px;
+    border: 1px solid rgba(0, 0, 0, 0.1); /* Subtle border */
+    text-align: center; /* Center the content */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transitions */
+}
+
+.subject-card h3 {
+    font-size: 1.2rem;
+    font-weight: 600;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+}
+
+.subject-card p {
+    font-size: 1rem;
+    color: #f0f0f0;
+    line-height: 1.5;
+}
+
+.subject-card:hover {
+    transform: translateY(-5px); /* Hover effect to lift the card */
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15); /* More pronounced shadow on hover */
+}
+
+@media (max-width: 768px) {
+    .subject-card {
+        width: 45%;
+    }
+}
+
+@media (max-width: 480px) {
+    .subject-card {
+        width: 90%;
+    }
+}
+#form2 {
+    align-content: center;
+    background-color: #597090;
+    padding: 25px 48px;
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 12px;
+    border: 2px solid rgb(0, 0, 0);
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+
+#form2 label{
+    color: #ffffff;
+}

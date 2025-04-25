@@ -1,0 +1,99 @@
+/* General Dashboard Container */
+.class-dashboard {
+    padding: 20px;
+    max-width: 1200px;
+    margin: auto;
+  }
+  
+  .class-dashboard h2 {
+    text-align: center;
+    color: #1f2937;
+    margin-bottom: 20px;
+  }
+  
+  
+  /* Add Class Button */
+  .btn-add-class {
+    display: block;
+    margin: 20px auto;
+    padding: 10px 20px;
+    font-size: 16px;
+    color: white;
+    background-color: #4caf50;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .btn-add-class:hover {
+    background-color: #388e3c;
+  }
+  
+  /* Class Cards Container */
+  .class-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+  }
+  
+  /* Individual Class Card */
+  .class-card {
+    background-color: #f9fafb;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    text-align: center;
+    cursor: pointer;
+    transition: transform 0.3s, box-shadow 0.3s;
+  }
+  
+  .class-card h3 {
+    color: #1f2937;
+    margin-bottom: 10px;
+  }
+  
+  .class-card p {
+    color: #555;
+  }
+  
+  .class-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Student Table */
+  .student-table-container {
+    display: none; /* Hidden by default */
+    margin-top: 20px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    background-color: #fff;
+  }
+  
+  .student-table-container h3 {
+    color: #1f2937;
+    margin-bottom: 15px;
+  }
+  
+  table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  table th,
+  table td {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  table th {
+    background-color: #f7b731; /* Golden Yellow */
+    color: white;
+  }
+  
+  table tr:hover {
+    background-color: #f1f1f1;
+  }
+  

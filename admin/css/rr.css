@@ -1,0 +1,135 @@
+/* Reports Section */
+#reports {
+    background: #ffffff;
+    padding: 25px;
+    border-radius: 10px;
+    margin: 20px auto;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    max-width: 90%;
+}
+
+/* Heading */
+#reports h2 {
+    color: #333;
+    font-size: 24px;
+    text-align: center;
+    margin-bottom: 20px;
+    border-bottom: 3px solid #007bff;
+    display: inline-block;
+    padding-bottom: 8px;
+}
+
+/* Filters */
+.filters {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.filters label {
+    font-size: 16px;
+    font-weight: bold;
+    color: #333;
+}
+
+.filters select, 
+.filters input[type="date"] {
+    padding: 8px 12px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+}
+
+.filters button {
+    background: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+.filters button:hover {
+    background: #0056b3;
+}
+
+/* Report Table */
+#reportTable {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+}
+
+#reportTable thead {
+    background: #007bff;
+    color: white;
+}
+
+#reportTable th, 
+#reportTable td {
+    padding: 12px;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+}
+
+#reportTable tbody tr:nth-child(even) {
+    background: #f8f9fa;
+}
+
+#reportTable tbody tr:hover {
+    background: #e2e6ea;
+}
+
+/* Export Buttons */
+.export-buttons {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.export-buttons button {
+    background: #28a745;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    font-size: 16px;
+    margin: 5px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+.export-buttons button:nth-child(2) {
+    background: #dc3545;
+}
+
+.export-buttons button:nth-child(3) {
+    background: #ffc107;
+    color: black;
+}
+
+.export-buttons button:hover {
+    opacity: 0.8;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    .filters {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .filters label {
+        font-size: 14px;
+    }
+
+    .filters select, 
+    .filters input {
+        width: 100%;
+    }
+}

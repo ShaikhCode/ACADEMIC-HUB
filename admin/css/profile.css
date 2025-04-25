@@ -1,0 +1,133 @@
+
+#student-profile {
+    flex: 3;
+    background-color: #fff; /* Neutral White */
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+#student-profile h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.profile-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.profile-image{
+    align-items:left;
+    
+}
+.profile-image img {
+    border-radius: 50%;
+    width: 150px;
+    margin-bottom: 15px;
+    
+}
+
+
+.profile-info, .academic-info, .settings {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #ddd;
+}
+
+.profile-info h3, .academic-info h3, .settings h3 {
+    color: #f7b731; /* Golden Yellow */
+    margin-bottom: 10px;
+}
+
+.profile-info p, .academic-info p {
+    margin: 5px 0;
+}
+
+.settings button {
+    padding: 10px 15px;
+    background-color: #f7b731; /* Golden Yellow */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+    margin-top: 10px;
+}
+
+.settings button:hover {
+    background-color: #555; /* Light Gray */
+}
+
+.avatar-form {
+    text-align: center;
+    padding: 10px;
+    border-radius: 10px;
+    background: #fff;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+ form{
+    display: none;
+    position: absolute;
+    top: 27%;
+    size: 101px;
+    left: 48%;
+    transform: translate(-50%, -50%);
+ }
+.avatar-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: center;
+    padding: 10px;
+}
+
+/* Hide radio buttons */
+.avatar-container input[type="radio"] {
+    display: none;
+}
+
+/* Style avatar images */
+.avatar-img {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    border: 3px solid transparent;
+    transition: transform 0.2s, border 0.2s;
+    cursor: pointer;
+}
+
+/* Highlight selected avatar */
+.avatar-container input[type="radio"]:checked + label img {
+    border: 3px solid #007bff;
+    transform: scale(1.1);
+}
+
+/* Hover effect */
+.avatar-img:hover {
+    transform: scale(1.1);
+}
+
+
+#message-box {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 15px 25px;
+    font-size: 18px;
+    color: #fff;
+    background-color: #28a745; /* Green for success */
+    border-radius: 5px;
+    display: none;
+    z-index: 1000;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Error Message Style */
+#message-box.error {
+    background-color: #dc3545; /* Red for error */
+}
