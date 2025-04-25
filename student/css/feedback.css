@@ -1,0 +1,139 @@
+/* Feedback Page Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9fafb;
+    color: #1f2937;
+}
+
+#feedback {
+    padding: 20px;
+    max-width: 600px;
+    margin: 36px auto;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+#feedback h1 {
+    color: #f7b731;
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    animation: slideIn 1s ease;
+}
+@keyframes slideIn {
+    from {
+        transform: translateY(-100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+
+.feedback-container {
+    margin-top: 20px;
+    animation: bounceIn 1s ease;
+}
+
+
+.form-group {
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+form label {
+    font-size: 1.1em;
+    color: #555;
+}
+
+form input, form select, form textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 1em;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-top: 5px;
+}
+
+textarea {
+    resize: none;
+}
+
+.submit-btn {
+    padding: 10px 20px;
+    font-size: 1.2em;
+    color: #fff;
+    background-color: #f7b731;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.submit-btn:hover {
+    background-color: #e6a627;
+}
+
+@media (max-width: 600px) {
+    form {
+        padding: 10px;
+    }
+    .form-group label {
+        font-size: 1em;
+    }
+    .submit-btn {
+        font-size: 1em;
+    }
+}
+
+/* Popup Message */
+.popup-message {
+    display: block;
+    position: fixed;
+    top: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 15px 20px;
+    border-radius: 8px;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    z-index: 1000;
+    text-align: center;
+    width: auto;
+    max-width: 350px;
+    min-width: 250px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.5s ease-in-out, visibility 0.5s ease-in-out;
+}
+
+/* Success (Green) */
+.success-message {
+    background-color: #89e6b0;  /* Bright Green */
+    border-left: 5px solid #89e6b0;
+}
+
+/* Error (Red) */
+.error-message {
+    background-color: #e48176;  /* Bright Red */
+    border-left: 5px solid #e48176;
+}
+
+/* Animation to show popup */
+.show-popup {
+    opacity: 1;
+    visibility: visible;
+}
+
+/* Animation to hide popup */
+.hide-popup {
+    opacity: 0;
+    visibility: hidden;
+}

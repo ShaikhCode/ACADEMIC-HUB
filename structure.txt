@@ -1,0 +1,112 @@
+📂 ACADEMIC-HUB
+│ ├── 📄 about.php
+│ ├── 📄 index.php
+│ ├── 📄 log.php
+│ ├── 📄 register.php
+│ ├── 📄 service.php
+│ ├── 📄 structure.txt
+│ ├── 📄 team.php
+│ ├── 📄 why.php
+│
+├── 📂 admin (Admin Dashboard & Management)
+│ ├── 📄 addclass.php
+│ ├── 📄 addstaff.php
+│ ├── 📄 addstud.php
+│ ├── 📄 addsub.php
+│ ├── 📄 admin.php
+│ ├── 📄 feedback.php
+│ ├── 📄 fetch_reports.php
+│ ├── 📄 fetch_students.php
+│ ├── 📄 profile.php
+│ ├── 📄 reports.php
+│ │
+│ ├── 📂 api (Admin API Services)
+│ │ ├── 📄 staffedit.php
+│ │ ├── 📄 studedit.php
+│ │ ├── 📄 subjectapi.php
+│ │
+│ ├── 📂 css (Admin Stylesheets)
+│ │ ├── 🎨 addclass.css
+│ │ ├── 🎨 addstaff.css
+│ │ ├── 🎨 addsub.css
+│ │ ├── 🎨 profile.css
+│ │ ├── 🎨 report.css
+│ │ ├── 🎨 rr.css
+│
+├── 📂 connect (Database & Authentication)
+│ ├── 📄 config.php
+│ ├── 📄 Exception.php
+│ ├── 📄 functions.php
+│ ├── 📄 logout.php
+│ ├── 📄 PHPMailer.php
+│ ├── 📄 SMTP.php
+│
+├── 📂 css (Global Stylesheets)
+│ ├── 🎨 bootstrap.css
+│ ├── 🎨 font-awesome.min.css
+│ ├── 🎨 log.css
+│ ├── 🎨 responsive.css
+│ ├── 🎨 style.css
+│
+├── 📂 img (Images & Icons)
+│ ├── 🖼 about-img.jpg
+│ ├── 🖼 about-img.png
+│ ├── 🖼 client1.jpg
+│ ├── 🖼 client2.jpg
+│ ├── 🖼 favicon.png
+│ ├── 🖼 hero-bg.png
+│ ├── 🖼 slider-bg.jpg
+│ ├── 📂 avt (Avatars)
+│ │ ├── 🖼 avatar1.png
+│ │ ├── 🖼 avatar2.png
+│ │ ├── 🖼 avatar3.png
+│
+├── 📂 js (JavaScript & Scripts)
+│ ├── 📜 bootstrap.js
+│ ├── 📜 custom.js
+│ ├── 📜 jquery-3.4.1.min.js
+│ ├── 📜 log.js
+│ ├── 📜 script.js
+│
+├── 📂 staff (Staff Portal & Management)
+│ ├── 📄 atten.php
+│ ├── 📄 feedback.php
+│ ├── 📄 fetch.php
+│ ├── 📄 mark.php
+│ ├── 📄 profile.php
+│ ├── 📄 report.php
+│ ├── 📄 staff.php
+│ ├── 📄 stud_manage.php
+│ │
+│ ├── 📂 css (Staff Stylesheets)
+│ │ ├── 🎨 addstud.css
+│ │ ├── 🎨 atten.css
+│ │ ├── 🎨 feedback.css
+│ │ ├── 🎨 mark.css
+│ │ ├── 🎨 profile.css
+│ │ ├── 🎨 report.css
+│ │
+│ ├── 📂 sapi (Staff APIs)
+│ │ ├── 📄 studapi.php
+│
+└── 📂 student (Student Portal & Dashboard)
+├── 📄 attendance.php
+├── 📄 feedback.php
+├── 📄 leaderboard.php
+├── 📄 marks.php
+├── 📄 profile.php
+├── 📄 stud.php
+│
+├── 📂 api (Student APIs)
+│ ├── 📄 delete_on.php
+│ ├── 📄 fetch.php
+│ ├── 📄 fmarks.php
+│ ├── 📄 update_on.php
+│
+├── 📂 css (Student Stylesheets)
+├── 🎨 ani.css
+├── 🎨 attendance.css
+├── 🎨 feedback.css
+├── 🎨 leaderboard.css
+├── 🎨 marks.css
+├── 🎨 profile.css
